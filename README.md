@@ -1,18 +1,31 @@
-
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# Project 4 - E-Commerce
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+## Getting Started
 
-Happy coding!
-The Cloud9 IDE team
+
+## Testing
+
+
+### Goals
+
+
+## Built With
+
+* CSS3
+* HTML5
+* JavaScript
+* Python
+* Django
+* Flask
+
+
+## Authors
+
+* **Jason Street** - *For Code Institute*
+
+
+## Acknowledgments
+
+* Stripe (For API)
