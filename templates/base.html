@@ -9,9 +9,12 @@
     <title>The Medicine Cabinet</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'font-awesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     {% block head_js %}
     {% endblock head_js %}
 </head>
@@ -37,6 +40,7 @@
                         <li><a href="{% url 'register' %}">Register</a></li>
                         <li><a href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
+                    <li><a href="#ex1" rel="modal:open">FAQ</a></li>
                     <li>
                         <a href="{% url 'view_cart' %}">
                             <i class="fa fa-shopping-cart"></i> Cart
@@ -58,13 +62,23 @@
             </div>
         </div>
     {% endif %}
+  <div id="ex1" class="modal" style>
+  <br><h4>Hello and Welcome to The Medicine Cabinet! This website was created to showcase an e-commerce site built in Django.</h4>
+  <p>The Medicine Cabinet is an online store where users can buy medicine, such as pain killers, first aid items, medical equipment and topical treatments.</p>
+  <p>The Medicine Cabinet features a Stripe API which allows easy payments to be made quickly. Items are priced by BitCoin, but do not reflect real world prices, due to rapid fluctuation.</p>
+  <p>Users can login to their profile which stores their cart, even after leaving the page.</p><br>
+  <p>Q: Can I purchase any of these items?</p>
+  <p>A: No, please do not submit any legitimate payment details to this website.</p>
+  <p>Q: What is sold here?</p>
+  <p>A: Medicine and Medical equipment. While some of the items list can be used for recreational purposes, I advise against it.</p>
+  <p>Q: Can I sell my own medication here?</p>
+  <p>A: We do not buy medication from individual resellers. I advise against selling your medication unless absolutely necessary.</p>
+  <p>Q: Where are these items sourced from?</p>
+  <p>A: This information is currently unavailable.</p>
+  <img src="/media/images/688617154-specialist-confidence-practitioner-stethoscope.jpg" class="modalimage" style="padding:16px;width:50%" alt="A doctor and a nurse">
+  <a href="#" rel="modal:close">Close</a>
+</div>
     <div class="container">
-        <div class="display">
-            <form action="{% url 'search' %}" method="get">
-                <input type="text" name="q">
-                <button type="submit">Search</button>
-            </form>
-        </div>
         {% block content %} {% endblock %}
     </div>
     <footer>
@@ -72,5 +86,6 @@
             <p>Made by Jason Street</p>
         </div>
     </footer>
+    <script src="/static/js/main.js"></script>
 </body>
 </html>
