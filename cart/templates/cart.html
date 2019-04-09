@@ -34,9 +34,8 @@
     {% endfor %}
 </div>
 <div class="row">
-    {% if not total %}
-    <p>test</p>
-    {% endif %}
+    {% if total %}
+    
     <p>Total</p>
     <p>
         <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span>{{ total }}
@@ -46,5 +45,18 @@
             Checkout
         </a>
 </div>
+{% else %}
+<div class="row">
+    
+    <p>Total</p>
+    <p>
+        <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span>{{ total }}
+    </p>
+        <a href="" class="btn btn-success" role="button">
+            <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+            You must add an item to checkout!
+        </a>
+</div>
+{% endif %}
 
 {% endblock %}
