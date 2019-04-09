@@ -9,8 +9,9 @@
         </div>
     </div>
 <div class="row row-flex">
-    {% if product %}
     {% for product in products %}
+    {% if product %}
+    
     <div class="col-xs-10 col-xs-offset-1 col-sm-offeset-0 col-sm-6 col-md-4 display panel panel-default">
         <div class="panel-body">
             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
@@ -28,9 +29,10 @@
             </form>
         </div>
     </div>
-    {% endfor %}
+    
     {% else %}
     <p>no products</p>
     {% endif %}
+    {% endfor %}
 </div>
 {% endblock %}
