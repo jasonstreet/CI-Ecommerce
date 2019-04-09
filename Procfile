@@ -1,2 +1,1 @@
-web: gunicorn e-commerce.wsgi:application
-release: python manage.py migrate
+web: gunicorn ecommerce.wsgi:application
