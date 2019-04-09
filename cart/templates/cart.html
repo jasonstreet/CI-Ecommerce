@@ -34,6 +34,9 @@
     {% endfor %}
 </div>
 <div class="row">
+    {% if total = 0 %}
+    <p>test</p>
+    {% endif %}
     <p>Total</p>
     <p>
         <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span>{{ total }}
