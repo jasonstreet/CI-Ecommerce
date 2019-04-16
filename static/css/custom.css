@@ -116,3 +116,7 @@ caption p{
   top: 0px;
   z-index: 1;
 }
+
+.testIntro{
+    opacity: 0.1; 
+}

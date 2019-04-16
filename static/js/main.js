@@ -1,3 +1,11 @@
+// Get button for intro
+var introTut = document.getElementsByClassName("introTut");
+
+// Intro js
+introTut.onclick = function() {
+  introJs().setOption("overlayOpacity", 0.4).start();
+};
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -22,9 +30,4 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-};
-
-// Test intro js
-window.onclick = function() {
-  introJs().start();
 };
