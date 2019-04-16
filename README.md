@@ -5,7 +5,10 @@ Medical e-commerce website built using Django, python, javascript, HTML and CSS
 ## Deployment
 
 
-## Testing
+### Testing
+
+In order to test my application, I used Djangos in-built testing framework. I created seperate test files for different sections of my application, such as the payment form, account creation, and product selection.
+
 
 
 ### Goals
