@@ -9,6 +9,16 @@ Medical e-commerce website built using Django, python, javascript, HTML and CSS
 
 In order to test my application, I used Djangos in-built testing framework. I created seperate test files for different sections of my application, such as the payment form, account creation, and product selection.
 
+'''
+    def test_no_submit_without_name(self):
+        form = OrderForm({'full_name': ''})
+        self.assertFalse(form.is_valid())
+        
+    def test_no_submit_without_credit_card(self):
+        form = MakePaymentForm({'Credit card number': ''})
+        self.assertFalse(form.is_valid())
+'''
+
 
 
 ### Goals
