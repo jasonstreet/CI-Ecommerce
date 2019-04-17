@@ -9,7 +9,16 @@ Medical e-commerce website built using Django, python, javascript, HTML and CSS
 
 In order to test my application, I used Djangos in-built testing framework. I created seperate test files for different sections of my application, such as the payment form, account creation, and product selection.
 
-
+```
+    def test_no_submit_without_name(self):
+        form = OrderForm({'full_name': ''})
+        self.assertFalse(form.is_valid())
+        
+    def test_no_submit_without_credit_card(self):
+        form = MakePaymentForm({'Credit card number': ''})
+        self.assertFalse(form.is_valid())
+```
+Here I have created tests for the payment form, to check if the form can be submitted under certain conditions, like whether or not the form can be submit without certain fields like name and the credit card information. Having tests for my payment details form was useful when working with the Stripe API, as I was able to test for error before writing my actual error codes for the end user.
 
 ### Goals
 
