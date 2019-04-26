@@ -38,7 +38,17 @@ As with any website, I also tested it for responsivness and usability on other d
 
 ## Goals <a name="Goals"></a>
 
-The idea for this website is to make buying/paying for medication easier for people. Right now most people pick up their medicine from a pharmacist or doctor's practice, but I think in the future medication will be bought online by most people, for it's convienience. I think a lot of older people could benefit from such a website. With that in made, I have made the website easy to use, from selecting items, all the way to paying for them. I have include a FAQ modal as well which contains all the details about the website.
+The idea for this website is to make buying/paying for medication easier for people. Right now most people pick up their medicine from a pharmacist or doctor's practice, but I think in the future medication will be bought online by most people, for it's convienience. I think a lot of older people could benefit from such a website. With that in made, I have made the website easy to use, from selecting items, all the way to paying for them. I have include a FAQ modal as well which contains all the details about the website. 
+
+I have created a wirefram which outlines the details for the website. I think the final product turned out a lot like my wireframe which i'm happy with. I would have liked to have the products wrapped in their own individual containers, which would allows users to scrolls through the listings without scrolling through the page itself. This would have meant that the nav bar would remain on screen at all times. Apart from that, I think the website is faithful to the wire frame that I created.
+
+![Wireframe](https://i.imgur.com/JOSkyRd.png)
+
+I wanted my website to have a tutorial/FAQ popup that wouldn't be too instrusive. One of my main goals was to make the website easy to use, and having a simple to use FAQ section was something that I wanted to use from the very start of development. I chose to use a modal rather than a seperate page, as this allowed users to view the FAQ, without losing their cart, or their place on the page. This meant that a user could easily open and close the FAQ without disruption, and overall I think it works very well with the clean and concise theme of the website.
+
+I looke at other medical supplier websites and I found that many include the design concepts that I had envisioned for my own website. They were sleek, simply to use and modern looking. I wanted my website to have a clinical and professional review. I also looked at other medical websites that weren't related to e-commerce, such as webMD and the NHS website. I found that even though these websites were not related to shopping, they still shared many themes and design choices that medical e-commerce sites had in their design.
+
+![Example ecommerce site](https://i.imgur.com/m7Wt0NW.png)
 
 
 ## Improvements <a name="Improvements"></a>
