@@ -1,6 +1,6 @@
 # Project 4 - E-Commerce
 
-Medical e-commerce website built using Django, python, javascript, HTML and CSS
+Medical e-commerce website built using Django, python, javascript, HTML and CSS.
 
 ## Table of Contents  
 1. [Deployment](#Deployment)  
@@ -9,8 +9,14 @@ Medical e-commerce website built using Django, python, javascript, HTML and CSS
 4. [Improvements](#Improvements)
 5. [Credits](#Credits)
 
-## Deployment <a name="Deployment"></a>
+## Deployment <a name="Deployment"></a> 
 
+The application has been deployed through Heroku. The live website can be accessed at: https://medicine-cabinet-js.herokuapp.com/
+Due to unknown reasons the application does not seem to work on Vivaldi browsers. After investigating the issue, I have not been able to find a clear reason as to why the website sometimes fails to load on Vivaldi. This could be a bug within Vivaldi itself, as the website works fine on other Browsers.
+![Vivaldi Error](https://i.imgur.com/YT87yK7.png)
+For the live version of this website, I have disabled debugging mode in my Django application settings by changing ```DEBUG = True``` to False. This means that the user won't see Django error messages if the page fails to load for whatever reason, they will instead see regular HTTP errors, such as 404 not found for example.
+
+To deploy the website, I deployed via the master Github branch through Heroku. To do this, I went into the Deployment section of my Heroku application settings, selected Master branch under manual deployment, and deployed from there. I also added my secret keys and URLs to my Heroku config variables, and then removed the hard coded values from my code.
 
 ## Testing <a name="Testing"></a>
 
