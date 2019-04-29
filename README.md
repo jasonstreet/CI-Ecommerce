@@ -1,6 +1,6 @@
 # Project 4 - E-Commerce
 
-Medical e-commerce website built using Django, Python, Javascript, HTML and CSS.
+Medical e-commerce website built using Django, Python, Javascript, HTML and CSS. This readme includes details on deployment, objectives, improvements and testing.
 
 ## Table of Contents  
 1. [Deployment](#Deployment)  
@@ -19,6 +19,11 @@ For the live version of this website, I have disabled debugging mode in my Djang
 
 To deploy the website, I deployed via the master Github branch through Heroku. To do this, I went into the Deployment section of my Heroku application settings, selected Master branch under manual deployment, and deployed from there. I also added my secret keys and URLs to my Heroku config variables, and then removed the hard-coded values from my code. This was done for security purposes.
 
+Since i deployed through GitHub, each time I wanted to update my project I had to commit to Git using the following methods:
+1. Using the developer console in Cloud9 I logged into GitHub, then I added all of my changes using ```git add --all```
+2. I then committed the additions along with a message using ```git commit -m "message here"```
+3. Then I pushed to GitHub using ```git push```
+
 ## Testing <a name="Testing"></a>
 
 In order to test my application, I used Djangos in-built testing framework. I created separate test files for different sections of my application, such as the payment form, account creation, and product selection.
@@ -35,6 +40,15 @@ In order to test my application, I used Djangos in-built testing framework. I cr
 Here I have created tests for the payment form, to check if the form can be submitted under certain conditions, like whether or not the form can be submitted without certain fields like name and the credit card information. Having tests for my payment details form was useful when working with the Stripe API, as I was able to test for error before writing my actual error codes for the end user.
 
 As with any website, I also tested it for responsiveness and usability on other devices. My images and text scaled appropriately when re-sized, and the interactive menu also changed to adapt to mobile devices and smaller screens by scaling into an accordion dropdown. This prevents the menu from obscuring any information when displayed on a small screen or mobile device. As mentioned above, the website sometimes fails to load on Vivaldi, however, I believe this may be a bug (this has also been discussed with other developers).
+
+I also tested my Javascript, such as the code that controls the modal. when I first implemented the modal I just wanted to see how the modal would look on my website, so before associating any kind of button with it, I created the script to run whenever I clicked on the window, and I created the button for the modal later on once i was satisfied with the modal itself.
+
+```
+window.onclick = function() {
+  modal.style.display = "block";
+};
+```
+Doing this meant I could focus on implementing the initial mdal functionality, then improve it, all before worrying about how the end user would activate it (in the end I settled for a button in the nav bar).
 
 ## Goals <a name="Goals"></a>
 
@@ -74,3 +88,4 @@ Including some more Javscript for added user interactivity might have been a use
 
 * Stripe (For API)
 * Google (For images)
+* W3Schools (For some Javascript)
