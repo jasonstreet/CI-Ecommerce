@@ -19,6 +19,11 @@ For the live version of this website, I have disabled debugging mode in my Djang
 
 To deploy the website, I deployed via the master Github branch through Heroku. To do this, I went into the Deployment section of my Heroku application settings, selected Master branch under manual deployment, and deployed from there. I also added my secret keys and URLs to my Heroku config variables, and then removed the hard-coded values from my code. This was done for security purposes.
 
+Since i deployed through GitHub, each time I wanted to update my project I had to commit to Git using the following methods:
+1. Using the developer console in Cloud9 I logged into GitHub, then I added all of my changes using ```git add --all```
+2. I then committed the additions along with a message using ```git commit -m "message here"```
+3. Then I pushed to GitHub using ```git push```
+
 ## Testing <a name="Testing"></a>
 
 In order to test my application, I used Djangos in-built testing framework. I created separate test files for different sections of my application, such as the payment form, account creation, and product selection.
