@@ -54,7 +54,7 @@ def checkout(request):
                 messages.error(request, "Unable to take payment")
         else:
             print(payment_form.errors)
-            messages.error(request, "Unable to take payment with these details")
+            messages.error(request, "Thank you for inputting your details! Remember this is not a real shop though!")
     else:
         payment_form = MakePaymentForm()
         order_form = OrderForm()
