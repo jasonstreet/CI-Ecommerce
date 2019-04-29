@@ -1,6 +1,6 @@
 # Project 4 - E-Commerce
 
-Medical e-commerce website built using Django, Python, Javascript, HTML and CSS.
+Medical e-commerce website built using Django, Python, Javascript, HTML and CSS. This readme includes details on deployment, objectives, improvements and testing.
 
 ## Table of Contents  
 1. [Deployment](#Deployment)  
@@ -88,3 +88,4 @@ Including some more Javscript for added user interactivity might have been a use
 
 * Stripe (For API)
 * Google (For images)
+* W3Schools (For some Javascript)
