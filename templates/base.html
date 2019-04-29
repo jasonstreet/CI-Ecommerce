@@ -39,10 +39,10 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li class="introTut"><a class="introTut">Tutorial</a></li>
+                        
                         <li><a href="{% url 'logout' %}">Log Out</a></li>
                     {% else %}
-                        <li class="introTut"><a class="introTut">Tutorial</a></li>
+                        
                         <li><a href="{% url 'register' %}">Register</a></li>
                         <li><a href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
@@ -69,7 +69,7 @@
         </div>
     {% endif %}
   <div id="ex1" class="modal" style>
-  <br><h4>Hello and Welcome to The Medicine Cabinet! This website was created to showcase an e-commerce site built in Django.</h4>
+  <br><br><h4>Hello and Welcome to The Medicine Cabinet! This website was created to showcase an e-commerce site built in Django.</h4>
   <p>The Medicine Cabinet is an online store where users can buy medicine, such as pain killers, first aid items, medical equipment and topical treatments.</p>
   <p>The Medicine Cabinet features a Stripe API which allows easy payments to be made quickly. Items are priced by BitCoin, but do not reflect real world prices, due to rapid fluctuation.</p>
   <p>Users can login to their profile which stores their cart, even after leaving the page.</p><br>
