@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5wqi9s#hqqf31#-aup+kps%az5p*gfyrx*06ak1pj$6*#+0ial'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), 'medicine-cabinet-js.herokuapp.com']
 
