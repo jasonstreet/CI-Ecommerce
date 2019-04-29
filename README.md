@@ -36,6 +36,15 @@ Here I have created tests for the payment form, to check if the form can be subm
 
 As with any website, I also tested it for responsiveness and usability on other devices. My images and text scaled appropriately when re-sized, and the interactive menu also changed to adapt to mobile devices and smaller screens by scaling into an accordion dropdown. This prevents the menu from obscuring any information when displayed on a small screen or mobile device. As mentioned above, the website sometimes fails to load on Vivaldi, however, I believe this may be a bug (this has also been discussed with other developers).
 
+I also tested my Javascript, such as the code that controls the modal. when I first implemented the modal I just wanted to see how the modal would look on my website, so before associating any kind of button with it, I created the script to run whenever I clicked on the window, and I created the button for the modal later on once i was satisfied with the modal itself.
+
+```
+window.onclick = function() {
+  modal.style.display = "block";
+};
+```
+Doing this meant I could focus on implementing the initial mdal functionality, then improve it, all before worrying about how the end user would activate it (in the end I settled for a button in the nav bar).
+
 ## Goals <a name="Goals"></a>
 
 The idea for this website is to make buying/paying for medication easier for people. Right now most people pick up their medicine from a pharmacist or doctor's practice, but I think in the future medication will be bought online by most people, for its convenience. I think a lot of older people could benefit from such a website. With that in made, I have made the website easy to use, from selecting items, all the way to paying for them. I have included a FAQ modal as well which contains all the details about the website. 
